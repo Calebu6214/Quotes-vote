@@ -14,6 +14,9 @@ export class QuoteComponent implements OnInit {
     new Quote(4,'"Life is what happens when you’re busy making other plans"','John Lennon'),
     new Quote(5,'"Never say die','Roman King"')
   ];
+  toggleDetails(index){
+    this.quotes[index].showName=!this.quotes[index].showName;
+  }
   constructor() { }
 
   ngOnInit(): void {
