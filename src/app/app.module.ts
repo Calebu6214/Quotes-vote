@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuoteDetailsComponent
+    QuoteDetailsComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,
