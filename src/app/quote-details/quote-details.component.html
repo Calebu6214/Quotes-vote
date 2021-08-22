@@ -4,6 +4,6 @@
     <button (click)="likeButtonClick(quote)" id="votes"> Like| {{quote.upvote}} </button> 
    <button (click)="dislikeButtonClick(quote)"  id="votes1"> Dislike | {{quote.downvote}} </button>
   </div>
-    <p>Created {{quote.completeDate|timeCount}} ago</p>
+    <p>Created {{quote.completeDate|timeCount}} days ago.</p>
     <a class="btn btn-danger" (click)='deletequote(quote)'>Delete quote</a>
 </div>
