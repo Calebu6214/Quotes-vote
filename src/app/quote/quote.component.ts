@@ -21,6 +21,11 @@ export class QuoteComponent implements OnInit {
     if (deletequoteevent) {
       this.quotes.splice(index,1);
     }
+  };
+  likeQuote(likequoteevent, index){
+    if (likequoteevent) {
+      this.quotes[index].upvote++;
+    }
   }
   constructor() { }
 

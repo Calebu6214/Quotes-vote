@@ -1,8 +1,11 @@
 <div class="container">
     <p><em>Author</em> : <span>{{quote.name}}</span></p>
-    <button type="button" ng-click="incrementLikes(vote)">Like</button> <td>0</td>
-    <button type="button" ng-click="incrementDislikes(vote)">Dislike</button> <tr>0</tr>
-    
+    <!-- <button type="button" ng-click="incrementLikes(vote)">Like</button> <td>0</td> -->
+    <!-- <button type="button" ng-click="incrementDislikes(vote)">Dislike</button> <tr>0</tr> -->
+    <div>
+    <a (click)="likeButtonClick(quote)" > Like | {{quote.upvote}} </a>
+<!-- <button (click)="dislikeButtonClick()" [ngClass]="chooseclassd ? 'dislike-button' : 'disliked'"> Dislike | {{numberOfDislike}} </button> -->
+  </div>
     <p>Created days ago</p>
     <a class="btn btn-danger" (click)='deletequote(quote)'>Delete quote</a>
 </div>

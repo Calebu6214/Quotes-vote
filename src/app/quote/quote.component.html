@@ -4,7 +4,7 @@
       <li *ngFor='let quote of quotes;let i=index'>{{quote.text}} by <strong>{{quote.name}}</strong>
         <br>
         <button (click)='toggleDetails(i)' class="btn btn-success">More details</button> <br>
-        <app-quote-details *ngIf='quote.showName' [quote]='quote' (deletequoteevent)='deleteQuote($event,i)'></app-quote-details>
+        <app-quote-details *ngIf='quote.showName' [quote]='quote' (deletequoteevent)='deleteQuote($event,i)' (likequoteevent)='likeQuote($event,i)'  ></app-quote-details>
       </li>
       
     </ul>
