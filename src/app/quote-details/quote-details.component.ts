@@ -52,11 +52,15 @@ export class QuoteDetailsComponent implements OnInit {
 
   @Output() deletequoteevent = new EventEmitter<Quote>();
   @Output() likequoteevent = new EventEmitter<Quote>();
+  @Output() dislikequoteevent = new EventEmitter<Quote>();
   deletequote(quoteToDelete:Quote){
     this.deletequoteevent.emit(quoteToDelete);
   };
   likeButtonClick(quoteToLike:Quote) {
     this.likequoteevent.emit(quoteToLike);
+  };
+  dislikeButtonClick(quoteToDislike:Quote) {
+    this.dislikequoteevent.emit(quoteToDislike);
   }
   constructor() { }
 
