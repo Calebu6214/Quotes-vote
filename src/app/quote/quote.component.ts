@@ -32,6 +32,13 @@ export class QuoteComponent implements OnInit {
       this.quotes[index].downvote++;
     }
   };
+
+  addNewQuote(Quote){
+    let quoteLength = this.quotes.length;
+  Quote.id = quoteLength+1;
+    Quote.completeDate = new Date(Quote.completeDate)
+    this.quotes.push(Quote)
+  }
   // showdateQuote(showdatequoteevent, index){
   //   if (showdatequoteevent) {
   //     this.quotes[index].completeDate;
