@@ -3,7 +3,7 @@
 ## By CALEB KIMUTAI
        
 ## Description
-
+--Website where you can upvote/downvote the listed quotes and even add your own quote and it reads the day(s) the quote was added.
 
 ## Setup/Installation Requirements
 .git fork/clone repository <br>
