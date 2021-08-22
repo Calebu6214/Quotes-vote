@@ -1,5 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
 
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+* {
+
+    box-sizing: border-box;
+    
+    margin: 0;
+    
+    padding: 0;
+    
+}
 body{
     background-color: greenyellow;
+}
+h1{
+    font-style: italic;
+    color: navy;
+}
+#quotes{
+    margin-top: 2%;
+    background-image: url(https://static.onecms.io/wp-content/uploads/sites/23/2020/04/27/positive-quotes-captions-life-motivational-inspirational-three-color-tout.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2%;
+    font-size: x-large;
+}
+em{
+    color:blue;
+}
+span{
+    color:rgb(167, 9, 240);
 }

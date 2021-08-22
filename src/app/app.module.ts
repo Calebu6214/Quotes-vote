@@ -10,7 +10,7 @@ import { QuoteComponent } from './quote/quote.component';
   declarations: [
     AppComponent,
     QuoteDetailsComponent,
-    QuoteComponent
+    QuoteComponent,
   ],
   imports: [
     BrowserModule,

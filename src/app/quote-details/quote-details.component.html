@@ -1,4 +1,8 @@
 <div class="container">
-    <p>{{quote.name}}</p>
-    <button>Delete quote</button>
+    <p><em>Author</em> : <span>{{quote.name}}</span></p>
+    <button type="button" ng-click="incrementLikes(vote)">Like</button> <td>0</td>
+    <button type="button" ng-click="incrementDislikes(vote)">Dislike</button> <tr>0</tr>
+    
+    <p>Created days ago</p>
+    <a class="btn btn-danger" (click)='deletequote(quote)'>Delete quote</a>
 </div>
