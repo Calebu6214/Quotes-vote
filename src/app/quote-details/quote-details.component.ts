@@ -27,26 +27,6 @@ import { Quote } from '../quote';
 })
 export class QuoteDetailsComponent implements OnInit {
 
-  // numberOfLikes : number=;
-  // numberOfDislike: number=25;
-  // chooseclassl:boolean = true;
-  // chooseclassd:boolean = true;
-
- 
-  // dislikeButtonClick() {
-  //   if (this.dislikeCounter === true && this.likesCounter === true) {
-  //     this.numberOfDislike++;
-  //     this.dislikeCounter = false;
-  //   } else if (this.dislikeCounter === true && this.likesCounter === false) {
-  //     this.numberOfDislike++;
-  //     this.numberOfLikes--;
-  //     this.dislikeCounter = false;
-  //     this.likesCounter = true;
-  //   } else if (this.dislikeCounter === false && this.likesCounter === true) {
-  //     this.numberOfDislike--;
-  //     this.dislikeCounter = true;
-  //   }
-  // };
 
   @Input() quote:Quote;
 
