@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[]=[
-    new Quote(1,'"The purpose of our lives is to be happy."','Dalai Lama',new Date(2022,6,13)),
+    new Quote(1,'"The purpose of our lives is to be happy."','Dalai Lama',new Date(2022,9,13)),
     new Quote(2,'"You only live once, but if you do it right, once is enough."','Mae West',new Date (2019,5,25)),
     new Quote(3,'"Get busy living or get busy dying."','Stephen King',new Date(1950,8,21)),
     new Quote(4,'"Life is what happens when you’re busy making other plans"','John Lennon',new Date(1998,6,7)),
