@@ -18,6 +18,7 @@
 .The form adds custom quotes the quotes below default ones. <br>
 .You can also delete quote with delete quote button.
 
+.Website link https://calebu6214.github.io/Quotes-vote
 
 ## Known Bugs
  .No Bugs
