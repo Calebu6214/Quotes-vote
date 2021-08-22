@@ -8,11 +8,11 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[]=[
-    new Quote(1,'"The purpose of our lives is to be happy."','Dalai Lama'),
-    new Quote(2,'"You only live once, but if you do it right, once is enough."','Mae West'),
-    new Quote(3,'"Get busy living or get busy dying."','Stephen King'),
-    new Quote(4,'"Life is what happens when you’re busy making other plans"','John Lennon'),
-    new Quote(5,'"Never say die','Roman King"')
+    new Quote(1,'"The purpose of our lives is to be happy."','Dalai Lama',new Date(2022,6,13)),
+    new Quote(2,'"You only live once, but if you do it right, once is enough."','Mae West',new Date (2019,5,25)),
+    new Quote(3,'"Get busy living or get busy dying."','Stephen King',new Date(1950,8,21)),
+    new Quote(4,'"Life is what happens when you’re busy making other plans"','John Lennon',new Date(1998,6,7)),
+    new Quote(5,'"Never say die','Roman King"',new Date(2006,6,6))
   ];
   toggleDetails(index){
     this.quotes[index].showName=!this.quotes[index].showName;
@@ -31,10 +31,15 @@ export class QuoteComponent implements OnInit {
     if (dislikequoteevent) {
       this.quotes[index].downvote++;
     }
-  }
+  };
+  // showdateQuote(showdatequoteevent, index){
+  //   if (showdatequoteevent) {
+  //     this.quotes[index].completeDate;
+  //   }
+  // }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit():void {
   }
 
 }
