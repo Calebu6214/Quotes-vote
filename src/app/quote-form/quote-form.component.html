@@ -11,6 +11,12 @@
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>Author is required</p>
               </div>
+
+              <label for="submitter">Submitter</label>
+              <input type="text" required class="form-control" id="submitter" [(ngModel)]="newQuote.submitter" name="submitter" #submitter='ngModel' >
+              <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
+                  <p>Submitter is required</p>
+                </div> 
   
         </div>
         <div class="form-group">
